@@ -1,9 +1,5 @@
 import React,{useEffect, useState} from 'react'
-<<<<<<< HEAD
 import {Routes,Route} from 'react-router-dom'
-=======
-import {HashRouter as Router,Routes,Route} from 'react-router-dom'
->>>>>>> 4cf593ccdc8ef2ae2e05cdd6a79f1d48f375a5b7
 import Home from './pages/Home';
 import Info from './pages/Info';
 import './App.css'
@@ -53,16 +49,10 @@ import './App.css'
     },[]
   )
   return (
-<<<<<<< HEAD
   
        
               <div className='container'>
-           
-=======
-    <Router>
-       
-              <div className='container'>
->>>>>>> 4cf593ccdc8ef2ae2e05cdd6a79f1d48f375a5b7
+               <h1> hello </h1>
               <Routes>
                 <Route exact path="/" element={ <Home country={country}
                 setCountry={setCountry}
@@ -79,11 +69,7 @@ import './App.css'
                 </Routes>
               </div>
    
-<<<<<<< HEAD
    
-=======
-    </Router>
->>>>>>> 4cf593ccdc8ef2ae2e05cdd6a79f1d48f375a5b7
   )
 }
 export default App
