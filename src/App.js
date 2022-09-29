@@ -52,6 +52,7 @@ import './App.css'
     <BrowserRouter>
        
               <div className='container'>
+              
               <Routes>
                 <Route path='/' element={ <Home country={country}
                 setCountry={setCountry}
