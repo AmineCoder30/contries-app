@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {Routes,Route} from 'react-router-dom'
 import Home from './pages/Home';
 import Info from './pages/Info';
 import './App.css'
@@ -17,7 +17,7 @@ import './App.css'
     const data = await response.json();
 
     setCountry(data)
-    console.log(data)
+   
     setFiltered(data)
   setIsLoading(false)
   }
@@ -49,16 +49,12 @@ import './App.css'
     },[]
   )
   return (
-    <BrowserRouter>
+  
        
               <div className='container'>
-<<<<<<< HEAD
-              
-=======
-               <h1> hello </h1>
->>>>>>> 069dba54a2726a09bf63943cdef9f39de267a0e6
+           
               <Routes>
-                <Route path='/' element={ <Home country={country}
+                <Route exact path="/" element={ <Home country={country}
                 setCountry={setCountry}
                 input={input}
                 setInput={setInput}
@@ -69,11 +65,11 @@ import './App.css'
                 filterByRegion={filterByRegion}
                 filterByName={filterByName}
                 isLoading={isLoading} />}/>
-                <Route path='/info/:cca2' element={<Info/>} />
+                <Route path="/info/:cca2" element={<Info/>} />
                 </Routes>
               </div>
    
-    </BrowserRouter>
+   
   )
 }
 export default App

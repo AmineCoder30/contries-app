@@ -17,7 +17,7 @@ import { useParams,useNavigate,Link } from 'react-router-dom'
 
      setDetails(detailsData)
    setIsLoading(false)
-     console.log(detailsData)
+ 
    }
    const changeClicked = ()=>{
     setClicked(!clicked)
@@ -25,6 +25,7 @@ import { useParams,useNavigate,Link } from 'react-router-dom'
   
    useEffect(()=>{
       getDetails()
+       // eslint-disable-next-line react-hooks/exhaustive-deps
    },[clicked])
   return (
     <div>
