@@ -52,9 +52,6 @@ import './App.css'
     <Router>
        
               <div className='container'>
-
-               <h1> hello </h1>
-
               <Routes>
                 <Route path='/' element={ <Home country={country}
                 setCountry={setCountry}
