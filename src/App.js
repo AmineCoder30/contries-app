@@ -49,10 +49,16 @@ import './App.css'
     },[]
   )
   return (
+<<<<<<< HEAD
   
        
               <div className='container'>
                <h1> hello </h1>
+=======
+
+              <div className='container'>
+
+>>>>>>> 72cd2d588fb6fb6c18b96ffda914485ca499a163
               <Routes>
                 <Route exact path="/" element={ <Home country={country}
                 setCountry={setCountry}
@@ -69,7 +75,10 @@ import './App.css'
                 </Routes>
               </div>
    
+<<<<<<< HEAD
    
+=======
+>>>>>>> 72cd2d588fb6fb6c18b96ffda914485ca499a163
   )
 }
 export default App
